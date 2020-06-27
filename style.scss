@@ -1,0 +1,83 @@
+@mixin absoulute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Work Sans', sans-serif;
+  transition: 0.1s;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+input {
+  outline: none;
+}
+
+body {
+  background-color: #050712;
+  color: white;
+}
+
+.large-button {
+  text-transform: uppercase;
+  padding: 1em;
+  color: #050712;
+  background-color: #fca311;
+  border-radius: 3px;
+  font-weight: bold;
+  margin: 0.5em;
+  box-shadow: 0 0.1em 1em rgba(0,0,0,0.5);
+}
+
+.large-button:hover {
+  box-shadow: 0 0.1em 0.4em rgba(0,0,0,0.8);
+  background-color: white;
+}
+
+#landing {
+  @include absoulute-center;
+  text-align: center;
+  transition: opacity 0.2s;
+
+  h1 {
+    font-family: 'Prompt', sans-serif;
+    font-size: 3.3em;
+    font-weight: normal;
+    color: #fca311;
+    user-select: none;
+
+    b {
+      font-weight: 700;
+      font-family: 'Prompt', sans-serif;
+    }
+  }
+}
+
+#host,
+#join {
+  @include absoulute-center;
+  text-align: center;
+  opacity: 0;
+  display: none;
+  transition: opacity 0.2s;
+  user-select: none;
+
+  #roomNameToCreate,
+  #roomNameToJoin {
+    text-align: center;
+    height: 1.3em;
+    background: transparent;
+    border: none;
+    border-bottom: solid white 0.05em;
+    color: white;
+    font-size: 1.2em;
+  }
+}

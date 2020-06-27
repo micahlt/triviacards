@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>TrivaCards</title>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;700&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.scss">
+</head>
+
+<body>
+  <div id="landing">
+    <h1>Trivia<b>Cards</b></h1>
+    <p>multiplayer trivia game</p><br><br>
+    <a class="large-button" href="#" id="hostGame">Host</a><a class="large-button" href="#" id="joinGame">Join</a>
+  </div>
+  <div id="host">
+    <h1>Host Game</h1><br>
+    <input type="text" placeholder="create a room name" id="roomNameToCreate"></input><br><br><br><a class="large-button" href="#" id="startHosting">Start</a>
+  </div>
+  <div id="join">
+    <h1>Join Game</h1><br>
+    <input type="text" placeholder="enter the room name" id="roomNameToJoin"></input><br><br><br><a class="large-button" href="#" id="startJoining">Start</a>
+  </div>
+  <div id="game">
+  </div>
+  <div id="monitor">
+  </div>
+  <script src="https://unpkg.com/peerjs@1.2.0/dist/peerjs.min.js"></script>
+  <script src="app.js" charset="utf-8"></script>
+</body>
+
+</html>

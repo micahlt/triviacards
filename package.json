@@ -1,0 +1,28 @@
+{
+  "name": "triviacards",
+  "version": "1.0.0",
+  "description": "A triva game with a beautiful UI",
+  "main": "/",
+  "scripts": {
+    "test": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/micahlt/triviacards.git"
+  },
+  "keywords": [
+    "trivia",
+    "game",
+    "cards",
+    "entertainment"
+  ],
+  "author": "Micah Lindley",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/micahlt/triviacards/issues"
+  },
+  "homepage": "https://github.com/micahlt/triviacards#readme",
+  "devDependencies": {
+    "sass": "^1.26.9"
+  }
+}
